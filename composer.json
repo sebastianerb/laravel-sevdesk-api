@@ -33,12 +33,12 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "sebastianerb\\LaravelSevdeskApi\\": "src"
+            "Exlo89\\LaravelSevdeskApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "sebastianerb\\LaravelSevdeskApi\\Tests\\": "tests"
+            "Exlo89\\LaravelSevdeskApi\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "sebastianerb\\LaravelSevdeskApi\\SevdeskApiServiceProvider"
+                "Exlo89\\LaravelSevdeskApi\\SevdeskApiServiceProvider"
             ],
             "aliases": {
-                "SevdeskApi": "sebastianerb\\LaravelSevdeskApi\\Facades\\SevdeskApi"
+                "SevdeskApi": "Exlo89\\LaravelSevdeskApi\\Facades\\SevdeskApi"
             }
         }
     }
