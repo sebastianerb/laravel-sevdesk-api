@@ -1,14 +1,19 @@
 {
-    "name": "exlo89/laravel-sevdesk-api",
+    "name": "sebastianerb/laravel-sevdesk-api",
     "description": "A helpful Sevdesk API client for Laravel.",
     "authors": [
         {
             "name": "Martin Appelmann",
             "email": "hello@martin-appelmann.de",
             "role": "Developer"
+        },
+        {
+            "name": "Sebastian Erb",
+            "email": "s.erb@trio-group.de",
+            "role": "IT Director"
         }
     ],
-    "homepage": "https://github.com/exlo89/laravel-sevdesk-api",
+    "homepage": "https://github.com/sebastianerb/laravel-sevdesk-api",
     "license": "MIT",
     "keywords": [
         "php",
@@ -28,12 +33,12 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Exlo89\\LaravelSevdeskApi\\": "src"
+            "sebastianerb\\LaravelSevdeskApi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Exlo89\\LaravelSevdeskApi\\Tests\\": "tests"
+            "sebastianerb\\LaravelSevdeskApi\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Exlo89\\LaravelSevdeskApi\\SevdeskApiServiceProvider"
+                "sebastianerb\\LaravelSevdeskApi\\SevdeskApiServiceProvider"
             ],
             "aliases": {
-                "SevdeskApi": "Exlo89\\LaravelSevdeskApi\\Facades\\SevdeskApi"
+                "SevdeskApi": "sebastianerb\\LaravelSevdeskApi\\Facades\\SevdeskApi"
             }
         }
     }
