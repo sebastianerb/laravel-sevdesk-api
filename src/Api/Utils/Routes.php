@@ -11,6 +11,7 @@ class Routes
 {
     const ACCOUNTING_CONTACT = 'AccountingContact';
     const CONTACT = 'Contact';
+    const INVOICE = 'Invoice';
     const CONTACT_ADDRESS = 'ContactAddress';
     const COMMUNICATION_WAY = 'CommunicationWay';
 }
