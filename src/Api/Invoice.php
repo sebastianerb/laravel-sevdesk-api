@@ -57,7 +57,7 @@ class Invoice extends ApiClient
      */
     public function create(array $parameters = [])
     {
-        return $this->_post(Routes::INVOICE, $parameters);
+        return $this->_post(Routes::SAVE_INVOICE, $parameters);
     }
 
     // ========================== update ==================================

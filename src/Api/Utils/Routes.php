@@ -12,6 +12,7 @@ class Routes
     const ACCOUNTING_CONTACT = 'AccountingContact';
     const CONTACT = 'Contact';
     const INVOICE = 'Invoice';
+    const SAVE_INVOICE = 'Invoice/Factory/saveInvoice';
     const CONTACT_ADDRESS = 'ContactAddress';
     const COMMUNICATION_WAY = 'CommunicationWay';
 }
