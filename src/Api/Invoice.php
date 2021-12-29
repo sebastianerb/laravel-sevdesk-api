@@ -55,11 +55,8 @@ class Invoice extends ApiClient
      * @param array $parameters
      * @return mixed
      */
-    private function create(array $parameters = [])
+    public function create(array $parameters = [])
     {
-        $parameters['category'] = [
-            "objectName" => "Category"
-        ];
         return $this->_post(Routes::INVOICE, $parameters);
     }
 
