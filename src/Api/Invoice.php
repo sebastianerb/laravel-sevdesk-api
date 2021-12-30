@@ -15,21 +15,19 @@ use Exlo89\LaravelSevdeskApi\Api\Utils\Routes;
  *
  * @see https://5677.extern.sevdesk.dev/apiOverview/index.html#/doc-contacts
  */
-class Invoice extends ApiClient
-{
+class Invoice extends ApiClient {
 
 
     // =========================== all ====================================
 
     /**
-     * Return all organisation contacts by default. If you want organisations and persons use $depth = 1.
+     * Return all organisation contacts by default. If you want organisations
+     * and persons use $depth = 1.
      *
-     * @param int $depth
      * @return mixed
      */
-    public function all(int $depth = 0)
-    {
-        return $this->_get(Routes::INVOICE, ['depth' => $depth]);
+    public function all() {
+        return $this->_get(Routes::INVOICE);
     }
 
 
@@ -40,10 +38,10 @@ class Invoice extends ApiClient
      * Return a single contact.
      *
      * @param $invoiceId
+     *
      * @return mixed
      */
-    public function get($invoiceId)
-    {
+    public function get($invoiceId) {
         return $this->_get(Routes::INVOICE . '/' . $invoiceId)[0];
     }
 
@@ -53,10 +51,10 @@ class Invoice extends ApiClient
      * Create contact.
      *
      * @param array $parameters
+     *
      * @return mixed
      */
-    public function create(array $parameters = [])
-    {
+    public function create(array $parameters = []) {
         return $this->_post(Routes::SAVE_INVOICE, $parameters);
     }
 
@@ -67,11 +65,23 @@ class Invoice extends ApiClient
      *
      * @param $invoiceId
      * @param array $parameters
+     *
      * @return mixed
      */
-    public function update($invoiceId, array $parameters = [])
-    {
+    public function update($invoiceId, array $parameters = []) {
         return $this->_put(Routes::INVOICE . '/' . $invoiceId, $parameters);
+    }
+
+    /**
+     * Book an Invoice
+     *
+     * @param $invoiceId
+     * @param array $parameters
+     *
+     * @return mixed
+     */
+    public function bookAmount($invoiceId, array $parameters = []) {
+        return $this->_put(Routes::INVOICE . '/' . $invoiceId . '/bookAmount', $parameters);
     }
 
     // ========================== delete ==================================
@@ -80,10 +90,10 @@ class Invoice extends ApiClient
      * Delete an existing invoice.
      *
      * @param $invoiceId
+     *
      * @return mixed
      */
-    public function delete($invoiceId)
-    {
+    public function delete($invoiceId) {
         return $this->_delete(Routes::INVOICE . '/' . $invoiceId);
     }
 }
