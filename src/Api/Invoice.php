@@ -1,8 +1,8 @@
 <?php
 /*
  * Contact.php
- * @author Martin Appelmann <hello@martin-appelmann.de>
- * @copyright 2021 Martin Appelmann
+ * @author Sebastian Erb <mail@sebastianerb.com>
+ * @copyright 2021 Sebastian Erb
  */
 
 namespace Exlo89\LaravelSevdeskApi\Api;
@@ -11,9 +11,9 @@ use Exlo89\LaravelSevdeskApi\Api\Utils\ApiClient;
 use Exlo89\LaravelSevdeskApi\Api\Utils\Routes;
 
 /**
- * Sevdesk Contact Api
+ * Sevdesk Invoice Api
  *
- * @see https://5677.extern.sevdesk.dev/apiOverview/index.html#/doc-contacts
+ * @see https://my.sevdesk.de/api/InvoiceAPI/doc.html#tag/Invoice
  */
 class Invoice extends ApiClient {
 

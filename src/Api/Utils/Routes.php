@@ -16,4 +16,5 @@ class Routes
     const CONTACT_ADDRESS = 'ContactAddress';
     const COMMUNICATION_WAY = 'CommunicationWay';
     const SEVUSER = "SevUser";
+    const CHECKACCOUNT = "CheckAccount";
 }
